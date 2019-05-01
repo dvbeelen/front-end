@@ -1,0 +1,264 @@
+/* Global */
+html {
+    overflow: auto;
+}
+
+body{
+    margin: 0px;
+    background-color: #ECECEC;
+    overflow-y: hidden; 
+}
+
+h2{
+    color: #0B0C10;
+    font-family: Baloo Chettan;
+    text-align: center;
+}
+
+p{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* Header */
+header{
+    background-color: #5DA2D5;
+    color: white;
+    font-family: Baloo Chettan;
+    text-align: center;
+    width: 100%;
+}
+
+/* Slider */
+#nav{
+    text-align: center;
+} 
+
+#nav > a{
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    border: 2px;
+    border-style: solid;
+    border-color: #1F2833;
+    font-family: Quicksand;
+} 
+
+#slider{
+    text-align: center;
+    background-color: white;
+    border: 4px;
+    border-style: solid;
+    height: 80%;
+    border-color: #1F2833;
+    border-radius: 10px;
+    font-family: Quicksand;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10px;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+  }
+
+#slide-1 {
+    background-color: #F3D250;
+}
+
+#slide-2 {
+    background-color: rgb(102, 187, 110);
+}
+
+#slide-3 {
+    background-color: #90CCF4;
+}
+
+#slide-4 {
+    background-color: #F78888;
+}
+
+#selectSong{
+    background-color: #90CCF4;
+}
+#game{
+    background-color: rgb(102, 187, 110);
+}
+#resultScreen{
+    background-color: #F3D250;
+}
+
+.slider_pic{
+    width: 400px;
+    height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button{
+    background-color: #1F2833;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #C5C6C7;
+    color: #C5C6C7;
+    font-family: Baloo Chettan;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a:link{
+    color: #ECECEC;
+}
+
+a:visited{
+    color: #ECECEC;
+}
+
+a:hover{
+    color: #0B0C10;
+}
+
+a:active{
+    color: #F3D250;
+}
+
+table{
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 30%;
+}
+
+.genrePic{
+    width: 200px; height: 200px;
+    float: left;
+    padding: 5px;
+}
+
+.genrePic:hover{
+    opacity: 0.2;
+}
+.gameSong{
+    width: 200px; height: 200px;
+}
+
+#selectSong p{
+    text-align: center;
+}
+
+/* Media Queries */
+/* Laptop */
+@media(max-width: 1024px){
+    .slider_pic{
+        display: none;
+    }
+    .genrePic{
+        width: 150px; height: 150px;
+    }
+
+    table{
+        width: 33%;
+        margin-top: 5%;
+        margin-right: 27%;
+    }
+}
+
+/* Tablet */
+@media(max-width: 833px){
+    #slider{
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+
+    .slider_pic{
+        width: 100%;
+        max-width: 310px;
+        height: auto;
+    }
+
+    table{
+        width: 50%;
+        margin-top: 5%;
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+}
+
+/* Mobile L */
+@media(max-width: 426px){
+    .slider_pic{
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+    }
+    p{
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+    .genrePic{
+        width: 100px; height: 100px;
+    }
+
+    table{
+        width: 50%;
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-right: 35%;
+    }
+}
+
+/* Mobile M */
+@media(max-width: 376px){
+    .slider_pic{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    .genrePic{
+        width: 75px; height: 75px;
+    }
+
+    table{
+        width: 50%;
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+}
+
+/* Mobile S */
+@media(max-width: 320px){
+    .slider_pic{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    .genrePic{
+        width: 75px; height: 75px;
+    }
+
+    table{
+        width: 50%;
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-right: 35%;
+    }
+}
+

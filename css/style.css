@@ -30,6 +30,36 @@ header{
     width: 100%;
 }
 
+/* Navigation (buttons and links) */
+button{
+    background-color: #1F2833;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #C5C6C7;
+    color: #C5C6C7;
+    font-family: Baloo Chettan;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a:link{
+    color: #ECECEC;
+}
+
+a:visited{
+    color: #ECECEC;
+}
+
+a:hover{
+    color: #0B0C10;
+}
+
+a:active{
+    color: #F3D250;
+}
+
 /* Slider */
 #nav{
     text-align: center;
@@ -70,11 +100,18 @@ header{
     scroll-behavior: smooth;
 }
 
+.slider_pic{
+    width: 400px;
+    height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .slide {
     width: 100%;
     flex-shrink: 0;
     height: 100%;
-  }
+}
 
 #slide-1 {
     background-color: #F3D250;
@@ -92,74 +129,41 @@ header{
     background-color: #F78888;
 }
 
-#selectSong{
-    background-color: #90CCF4;
-}
-#game{
-    background-color: rgb(102, 187, 110);
-}
-#resultScreen{
-    background-color: #F3D250;
+#slide-4 p{
+    text-align: center;
 }
 
-.slider_pic{
-    width: 400px;
-    height: 300px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-button{
-    background-color: #1F2833;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #C5C6C7;
-    color: #C5C6C7;
-    font-family: Baloo Chettan;
-    font-size: 16px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-a:link{
-    color: #ECECEC;
-}
-
-a:visited{
-    color: #ECECEC;
-}
-
-a:hover{
-    color: #0B0C10;
-}
-
-a:active{
-    color: #F3D250;
+#chosenGenre{
+    margin-bottom: 0%;
+    font-size: 20px;
 }
 
 table{
     width: 50%;
-    margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 30%;
+    margin-top: 0%;
+    margin: 0 auto;
 }
 
-.genrePic{
+.genreImg{
     width: 200px; height: 200px;
     float: left;
     padding: 5px;
 }
 
-.genrePic:hover{
+.genreImg:hover{
     opacity: 0.2;
 }
+
 .gameSong{
     width: 200px; height: 200px;
 }
 
-#selectSong p{
-    text-align: center;
+#game{
+    background-color: rgb(102, 187, 110);
+}
+
+#resultScreen{
+    background-color: #F3D250;
 }
 
 /* Media Queries */
@@ -168,15 +172,10 @@ table{
     .slider_pic{
         display: none;
     }
-    .genrePic{
+    .genreImg{
         width: 150px; height: 150px;
     }
 
-    table{
-        width: 33%;
-        margin-top: 5%;
-        margin-right: 27%;
-    }
 }
 
 /* Tablet */
@@ -192,13 +191,6 @@ table{
         max-width: 310px;
         height: auto;
     }
-
-    table{
-        width: 50%;
-        margin-top: 5%;
-        margin-left: 22%;
-        margin-right: 22%;
-    }
 }
 
 /* Mobile L */
@@ -213,15 +205,8 @@ table{
         margin-left: 12.5%;
         margin-right: 12.5%;
     }
-    .genrePic{
+    .genreImg{
         width: 100px; height: 100px;
-    }
-
-    table{
-        width: 50%;
-        margin-top: 5%;
-        margin-left: 15%;
-        margin-right: 35%;
     }
 }
 
@@ -232,14 +217,8 @@ table{
         max-width: 200px;
         height: auto;
     }
-    .genrePic{
+    .genreImg{
         width: 75px; height: 75px;
-    }
-
-    table{
-        width: 50%;
-        margin-top: 5%;
-        margin-left: 20%;
     }
 }
 
@@ -250,15 +229,8 @@ table{
         max-width: 200px;
         height: auto;
     }
-    .genrePic{
+    .genreImg{
         width: 75px; height: 75px;
-    }
-
-    table{
-        width: 50%;
-        margin-top: 5%;
-        margin-left: 15%;
-        margin-right: 35%;
     }
 }
 

@@ -54,30 +54,24 @@
                 <img class="slider_pic" src="images/millinxpark_3.jpg">         
             </div>
 
-            <div class="slide" id="slide-4">
-                <h2>Piano Party</h2>
-                <p> Hier kan je het spel starten door eerst een deuntje uit te kiezen. Daarna moet je alleen op start klikken en zal het spel beginnen. 
-                </p>
-                <button id="startGame"><a href="#selectSong"> Start het spel </a></button>
-            </div>
-
-            <div class="slide" id="selectSong"> 
+            <div class="slide" id="slide-4"> 
+                <h2 id = "chosenGenre">Kies een genre</h2>
                 <table>
                     <tr>
-                    <td><img class="genrePic" onclick="p = 1"></td>
-                    <td><img class="genrePic" onclick="p = 2"></td>   
+                    <td><img class="genreImg" onclick="p = 1"></td>
+                    <td><img class="genreImg" onclick="p = 2"></td>   
                     </tr><tr>
-                    <td><p> Klassiek</p></td>
-                    <td><p> Rock</p></td>
+                    <td><p class ="genres"> Klassiek</p></td>
+                    <td><p class ="genres"> Rock</p></td>
                     </tr><tr>
-                    <td><img class="genrePic" onclick="p = 3"></td>
-                    <td><img class="genrePic" onclick="p = 4"></td> 
+                    <td><img class="genreImg" onclick="p = 3"></td>
+                    <td><img class="genreImg" onclick="p = 4"></td> 
                     </tr><tr>
-                    <td><p> Hip hop </p></td>
-                    <td><p> Game muziek</p></td>
+                    <td><p class ="genres"> Hip hop </p></td>
+                    <td><p class ="genres"> Game muziek</p></td>
                     </tr>
                 </table>
-                <button id="saveChoice" onclick="genreChoice()"> <a href="#game"> Kies nummer </a></button>
+                <button id="chooseGenre" onclick="startGame()"> <a href="#game"> Kies nummer </a></button>
             </div>
 
             <div class="slide" id ="game"> 

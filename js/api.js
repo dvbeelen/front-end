@@ -7,11 +7,11 @@ let x = 0
 //a picture is fetched from API for every genre in the genres-array
 for (i=0; i<musicTypes.length; i++){
 fetch(`https://source.unsplash.com/${imageWidth}x${imageHeight}/?${musicTypes[i]}`)
-    .then(data => changeSongImg(data))
+    .then(data => fetchImages(data))
 }
 
 //fetched pictures are logged one by one on the selectSong screen.
-function changeSongImg(data){   
+function fetchImages(data){   
     images[x].src = data.url;  
     x++
 }

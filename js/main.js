@@ -5,6 +5,8 @@ let status = document.getElementById("status");
 let endGame = document.getElementById("endGame");
 let genreImg = document.getElementsByClassName("genreImg");
 let genres = document.getElementsByClassName("genres")
+let restart = document.getElementById("restart")
+
 
 //Adds the useButton function to all four pictures in the genres array
 function setButtons(){ 
@@ -25,7 +27,6 @@ function useButton(i){
       //When an image is clicked, the src of that image is given to the images on the game- and endgamescreen
       gameSong[0].src = genreImg[ii].src;
       gameSong[1].src = genreImg[ii].src;
-
       //If an image is deselected, its border goes from green back to black.
     } else {
       genreImg[ii].style.borderColor = "black";
@@ -35,7 +36,8 @@ function useButton(i){
 
 //This function adds a score of 150 to the total gameScore every 3 seconds. This is done to simulate how the app would function during gameplay. 
   function startGame(){
-  setInterval(function upScore() {
+    console.log("start" + gameScore)
+   window.interval = setInterval(function upScore() {
     gameScore = gameScore + 150;
     document.getElementById("score").innerHTML = gameScore;
   }, 3000);
@@ -43,8 +45,16 @@ function useButton(i){
 
 //Stops the adding of score, gives player endresult
 endGame.addEventListener("click", function gameEnd(){
-  gameScore = gameScore
   document.getElementById("endScore").innerHTML = gameScore
 })
+
+restart.addEventListener("click", function restart(){
+  clearInterval(window.interval)
+  gameScore = 0
+  document.getElementById("score").innerHTML = gameScore
+  console.log(gameScore)
+  console.log(typeof interval)
+})
+
  
 setButtons()

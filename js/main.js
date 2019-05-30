@@ -1,10 +1,11 @@
 //Set variables
-let gameScore = 0;
-let gameSong = document.getElementsByClassName("gameSong");
-let status = document.getElementById("status");
-let endGame = document.getElementById("endGame");
 let genreImg = document.getElementsByClassName("genreImg");
 let genres = document.getElementsByClassName("genres")
+let gameSong = document.getElementsByClassName("gameSong");
+let status = document.getElementById("status");
+let startGame = document.getElementById("startGame")
+let gameScore = 0;
+let endGame = document.getElementById("endGame");
 let restart = document.getElementById("restart")
 
 
@@ -35,25 +36,24 @@ function useButton(i){
 }
 
 //This function adds a score of 150 to the total gameScore every 3 seconds. This is done to simulate how the app would function during gameplay. 
-  function startGame(){
-    console.log("start" + gameScore)
-   window.interval = setInterval(function upScore() {
+startGame.addEventListener("click", function startGame(){
+    window.interval = setInterval(function upScore() {
     gameScore = gameScore + 150;
     document.getElementById("score").innerHTML = gameScore;
   }, 3000);
-}
+})
+
 
 //Stops the adding of score, gives player endresult
-endGame.addEventListener("click", function gameEnd(){
+endGame.addEventListener("click", function endGame(){
   document.getElementById("endScore").innerHTML = gameScore
 })
 
+//Clears the interval that has been building up on the Game-screen and sets score back to 0
 restart.addEventListener("click", function restart(){
   clearInterval(window.interval)
   gameScore = 0
   document.getElementById("score").innerHTML = gameScore
-  console.log(gameScore)
-  console.log(typeof interval)
 })
 
  

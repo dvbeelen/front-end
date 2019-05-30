@@ -10,13 +10,13 @@ let restart = document.getElementById("restart")
 
 
 //Adds the useButton function to all four pictures in the genres array
-function setButtons(){ 
+function setImages(){ 
   for(let i = 0; i < genreImg.length; i++){
-    genreImg[i].addEventListener("click",()=> useButton(i));
+    genreImg[i].addEventListener("click",()=> selectImage(i));
   }
 }
 
-function useButton(i){
+function selectImage(i){
   //The item from the genres-array that corresponds with the i from the for loop is shown in the status-element
   status.innerHTML = genres[i].textContent;
 
@@ -57,4 +57,4 @@ restart.addEventListener("click", function restart(){
 })
 
  
-setButtons()
+setImages()

@@ -10,7 +10,7 @@ fetch(`https://source.unsplash.com/${imageWidth}x${imageHeight}/?${musicTypes[i]
     .then(data => fetchImages(data))
 }
 
-//fetched pictures are logged one by one on the selectSong screen.
+//fetched pictures are logged one by one on the slide-4 screen.
 function fetchImages(data){   
     images[x].src = data.url;  
     x++

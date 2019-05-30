@@ -43,7 +43,6 @@ startGame.addEventListener("click", function startGame(){
   }, 3000);
 })
 
-
 //Stops the adding of score, gives player endresult
 endGame.addEventListener("click", function endGame(){
   document.getElementById("endScore").innerHTML = gameScore
@@ -56,5 +55,4 @@ restart.addEventListener("click", function restart(){
   document.getElementById("score").innerHTML = gameScore
 })
 
- 
 setImages()
